@@ -1,0 +1,175 @@
+:root {
+  --main-color: #2196f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.name {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.msg {
+  background-color: #fff;
+  padding: 15px;
+  margin: 8px 0;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.msg h1 {
+  margin-top: 3px;
+}
+
+.msg span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.msg span::before {
+  content: "[ ";
+}
+
+.msg span::after {
+  content: " ] ";
+}
+
+.start,
+.choose-lvl {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #009688;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 3s;
+}
+
+.choose-lvl {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #009688;
+  margin-bottom: 2px;
+}
+
+.choose-lvl label {
+  margin-right: 20px;
+}
+
+.start:hover {
+  background-color: #133b37;
+}
+
+.the-word {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  margin: 3px 0;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border: 3px solid var(--main-color);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.upcoming-words,
+.instructions {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: #fff;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: var(--main-color);
+}
+
+.finish .bad {
+  color: red;
+}
+
+.instructions {
+  font-size: 20px;
+  display: block;
+}
+
+.instructions h2 {
+  text-align: center;
+}
+
+.instructions ul {
+  list-style: none;
+}
+
+.instructions ul li {
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--main-color);
+}

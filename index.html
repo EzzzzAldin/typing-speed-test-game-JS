@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="name">Typing Speed Test Game</div>
+      <div class="container">
+        <div class="msg">
+          You Are Playing On
+          <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type The Word
+          <h1></h1>
+        </div>
+        <div class="choose-lvl">
+          <input type="radio" id="easy" name="lvl" value="Easy" />
+            <label for="easy">Easy</label><br />
+            <input type="radio" id="normal" name="lvl" value="Normal" checked />  
+          <label for="normal">Normal</label><br />
+            <input type="radio" id="hard" name="lvl" value="Hard" />  
+          <label for="hard">Hard</label>
+        </div>
+        <div class="start">Start Playing</div>
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words">Words Will Show Here</div>
+        <div class="control">
+          <div class="time">Time Left: <span></span> Second</div>
+          <div class="score">
+            Score: <span class="got">0</span> From <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+        <div class="instructions">
+          <h2>instructions</h2>
+          <ul class="instructions-ul">
+            <li class="ins-one"></li>
+            <li class="ins-two"></li>
+            <li class="ins-three"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
